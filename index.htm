@@ -305,7 +305,7 @@
                 main.innerText = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
                 top.innerText = "STOPWATCH";
                 bottom.innerText = "CHRONO MODE";
-                small.innerText = ms.toString().padStart(2, '0'); // মিলি-সেকেন্ড
+                small.innerText = ms.toString().padStart(2, '0');
             } else if(mode === 'timer') {
                 const m = Math.floor(tTime / 60);
                 const s = tTime % 60;
@@ -346,6 +346,28 @@
 
         setInterval(() => { if(mode === 'countdown') update(); }, 1000);
         update();
+       
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+document.onkeydown = function(e) {
+ে
+  if (e.keyCode == 123) {
+    return false;
+  }
+  ে
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+    return false;
+  }
+  
+  
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+    return false;
+  }
+  
+  if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+    return false;
+  }
+};
     </script>
 </body>
 </html>
