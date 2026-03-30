@@ -29,7 +29,6 @@
             transition: all 0.5s ease;
         }
 
-        /* Force Landscape Animation like YT */
         .force-landscape {
             transform: rotate(90deg);
             transform-origin: center;
@@ -60,7 +59,6 @@
             text-align: center;
         }
 
-        /* The Horizontal Split Line */
         .digit-split {
             position: absolute;
             top: 50%;
@@ -83,7 +81,7 @@
             text-align: center;
         }
 
-        /* Nav for Mode Switch */
+    
         .mode-nav {
             position: fixed;
             top: 1.5rem;
@@ -107,7 +105,7 @@
             color: #fff;
         }
 
-        /* Bottom Controls */
+  
         .controls {
             position: fixed;
             bottom: 2rem;
@@ -144,7 +142,6 @@
 
         .ctrl-btn:active { background: #111; }
 
-        /* Custom Time Input */
         #custom-time-input {
             background: transparent;
             border: none;
@@ -168,7 +165,6 @@
         }
         .rotate-trigger:hover { opacity: 1; }
 
-        /* Animation for number change */
         .change-anim {
             animation: flipEffect 0.4s ease-in-out;
         }
@@ -179,7 +175,6 @@
             100% { transform: scaleY(1); }
         }
 
-        /* Responsive Landscape (Real & Forced) */
         @media (orientation: landscape) {
             .big-digit { font-size: 45vh; }
             .label { margin: 0.5rem 0; font-size: 0.9rem; }
@@ -192,7 +187,6 @@
 </head>
 <body id="body-main">
 
-    <!-- Rotate Icon -->
     <div class="rotate-trigger" onclick="toggleRotation()">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M23 4v6h-6"></path><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
     </div>
@@ -211,8 +205,8 @@
     </div>
 
     <div id="bottom-text" class="label">MONDAY</div>
+    <h5>21/4/2025</h5>
 
-    <!-- Seconds / Milliseconds Display -->
     <div id="small-sec" style="position: fixed; bottom: 1.5rem; right: 1.5rem; font-size: 1.5rem; font-weight: 800; opacity: 0.15;">
         00
     </div>
